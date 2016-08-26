@@ -3,13 +3,13 @@
     2. It should loop through an array of strings and perform certain actions based on the `promptType`.
 
 
-* [ ] Build a flexible function `talkToUser` that takes a collection of prompts and a string, `promptType`, and:
+* [X] Build a flexible function `talkToUser` that takes a collection of prompts and a string, `promptType`, and:
 
-    * [ ] if the `promptType` is equal to 'log', log each prompt in the collection to the console using the native console.log function.
+    * [X] if the `promptType` is equal to 'log', log each prompt in the collection to the console using the native console.log function.
 
-    * [ ] if the `promptType` is equal to 'alert', alert the user of each prompt in the collection using the native `alert` function.
+    * [X] if the `promptType` is equal to 'alert', alert the user of each prompt in the collection using the native `alert` function.
 
-    * [ ] if the `promptType` is equal to 'prompt', prompt the user with each prompt in the collection using the native `prompt` function.
+    * [X] if the `promptType` is equal to 'prompt', prompt the user with each prompt in the collection using the native `prompt` function.
 
 Example:
 
