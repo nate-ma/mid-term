@@ -54,25 +54,22 @@ console.log("Testing anyEvens. We expect false:", anyEvens(myArrTwo))
 var printDataType = function(collection){
 	if(Array.isArray(collection)){
 		for(var i = 0; i < collection.length; i++){
+			console.log(collection[i]);
 			if (Array.isArray(collection[i])){
 				console.log("I am an array");
 			}
 			else if (typeof collection[i] === "function"){
 				console.log("I am a function");
 			}
+			else{
+				console.log("I am a " + typeof collection[i])
+			}
 		}
 	}
 	else if(typeof collection === "object"){
 		for(var key in collection){
-			if(typeof collection[key] === "string"){
-				console.log("I am a string");
-			}
-			else if(typeof collection[key] === "number"){
-				console.log("I am a number");
-			}
-			else if(typeof collection[key] === "boolean"){
-				console.log("I am a boolean");
-			}
+			console.log(collection[key])
+			console.log("I am a " + typeof collection[key])
 		}
 	}
 	else{
